@@ -1,0 +1,5 @@
+    <form action = "/<%=@board.id%>/update" method ="POST">
+    <input type ="hidden" name = "authenticity_token" value = "<%= form_authenticity_token%>">
+    <input type = "text" name = "content" value = "<%= @board.contents%>">
+    <input type = "submit" value = "수정하기">
+    </form>
