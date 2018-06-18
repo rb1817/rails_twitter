@@ -21,6 +21,12 @@
       </nav>
         </div>
   </div>
+  <div>
+  <% flash.each do |k,v|%>
+    <script>
+     toastr.<%= k%>("<%= v %>");
+    </script>
+  <%end%>
     <%= yield %>
   </body>
 </html>
